@@ -14,13 +14,13 @@ Ein umfangreiches **Multiple-Choice-Quiz** mit **100 Fragen** zu verschiedenen T
 
 ## 🚀 Nutzung
 1. **Python installieren** (falls nicht vorhanden)  
-2. Lade die Datei `quiz.py` herunter oder klone das Repository:
+2. Lade die Datei `QuizOS.py` herunter oder klone das Repository:
    ```bash
    git clone https://github.com/bshrmonsti761/OS-Quiz
 
  3. Führe das Quiz mit folgendem Befehl aus:
     ```bash
-    python quiz.py
+    python QuizOS.py
 
 # Zielgruppe
 Dieses Quiz eignet sich perfekt für:
