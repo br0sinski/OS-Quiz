@@ -16,7 +16,7 @@ Ein umfangreiches **Multiple-Choice-Quiz** mit **100 Fragen** zu verschiedenen T
 1. **Python installieren** (falls nicht vorhanden)  
 2. Lade die Datei `quiz.py` herunter oder klone das Repository:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/bshrmonsti761/OS-Quiz
 
  3. Führe das Quiz mit folgendem Befehl aus:
     ```bash
