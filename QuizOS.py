@@ -311,7 +311,7 @@ questions = [
     }
 ]
 
-def ask_question(question_data):
+def ask_question(question_data, duplicate_qustions: bool):
     print(question_data["question"])
     for i, option in enumerate(question_data["options"], 1):
         print(f"{i}. {option}")
@@ -332,9 +332,19 @@ def quiz():
     print("-"*53)
     print("Willkomen zum OS Quiz!")
     print("-"*53)
+
+    inp = str(input("Willst du dass die Fragen sich widerholen? (y/n)"))
+    repeated_questions = False
+    if inp == 'y' or inp == 'Y':
+        repeated_questions = True
+
     score = 0
+    asked_questions = set()
     for question in questions:
-        user_answer = ask_question(question)
+        if not repeated_questions and question["question"] in asked_questions:
+            continue
+        asked_questions.add(question["question"])
+        user_answer = ask_question(question, repeated_questions)
         if user_answer == "STOP":
             break
         if user_answer == question["answer"]:
